@@ -1,0 +1,34 @@
+# Local operating-system files
+.DS_Store
+._*
+
+# Agent-local state and editor metadata
+.hermes/
+.idea/
+.vscode/
+
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+.playwright/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.log
+
+# Local credentials; examples must contain placeholders only
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Raw private inputs must never be committed
+private-inputs/
+
+# Optional future Python data-processing tools
+__pycache__/
+*.py[cod]
+.venv/
