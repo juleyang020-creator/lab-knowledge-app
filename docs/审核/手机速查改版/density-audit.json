@@ -1,0 +1,1181 @@
+{
+  "timestamp": "2026-09-16T14:23:10.705Z",
+  "url": "http://127.0.0.1:4317",
+  "measuredCases": 48,
+  "baselineList390": {
+    "headerHeight": 187.5,
+    "firstItemTop": 842.484375,
+    "firstItemHeight": 363.984375,
+    "note": "本轮开始时改紧凑布局前的实际浏览器量测；不是依据截图估算。"
+  },
+  "rows": [
+    {
+      "browser": "chromium",
+      "width": 320,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 320,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 320,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 371.9375,
+        "height": 114.875,
+        "width": 288
+      },
+      "reference": {
+        "top": 486.8125,
+        "height": 134.484375,
+        "width": 288
+      },
+      "fontSize": "16px",
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 320,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 320,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 320,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 371.9375,
+        "height": 114.875,
+        "width": 288
+      },
+      "reference": {
+        "top": 486.8125,
+        "height": 134.484375,
+        "width": 288
+      },
+      "fontSize": "16px",
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 327.15625,
+        "height": 87.6875,
+        "width": 358
+      },
+      "reference": {
+        "top": 414.84375,
+        "height": 134.484375,
+        "width": 358
+      },
+      "fontSize": "16px",
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 327.15625,
+        "height": 87.6875,
+        "width": 358
+      },
+      "reference": {
+        "top": 414.84375,
+        "height": 134.484375,
+        "width": 358
+      },
+      "fontSize": "16px",
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 900,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 900,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 900,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 900,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 900,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 900,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 1280,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 1280,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 1280,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 1280,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 1280,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "chromium",
+      "width": 1280,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 371.9375,
+        "height": 114.875,
+        "width": 288
+      },
+      "reference": {
+        "top": 486.8125,
+        "height": 134.484375,
+        "width": 288
+      },
+      "fontSize": "16px",
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 288
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 320
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 371.9375,
+        "height": 114.875,
+        "width": 288
+      },
+      "reference": {
+        "top": 486.8125,
+        "height": 134.484375,
+        "width": 288
+      },
+      "fontSize": "16px",
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "documentWidth": 320,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 327.15625,
+        "height": 87.6875,
+        "width": 358
+      },
+      "reference": {
+        "top": 414.84375,
+        "height": 114.6875,
+        "width": 358
+      },
+      "fontSize": "16px",
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 148.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": {
+        "top": 365.875,
+        "height": 104.984375,
+        "width": 358
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 143,
+        "width": 390
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 327.15625,
+        "height": 87.6875,
+        "width": 358
+      },
+      "reference": {
+        "top": 414.84375,
+        "height": 114.6875,
+        "width": 358
+      },
+      "fontSize": "16px",
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "documentWidth": 390,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 900,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 900,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 900,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 900,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 900,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 844
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 900,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 900
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 900,
+      "mainScrollWidth": 900,
+      "documentWidth": 900,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 1280,
+      "theme": "light",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 1280,
+      "theme": "light",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 1280,
+      "theme": "light",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 1280,
+      "theme": "dark",
+      "label": "list",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 148.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 1280,
+      "theme": "dark",
+      "label": "search",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": {
+        "top": 323.875,
+        "height": 104.984375,
+        "width": 944
+      },
+      "clinical": null,
+      "reference": null,
+      "fontSize": null,
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    },
+    {
+      "browser": "webkit",
+      "width": 1280,
+      "theme": "dark",
+      "label": "detail",
+      "header": {
+        "top": 0,
+        "height": 101,
+        "width": 1280
+      },
+      "firstItem": null,
+      "clinical": {
+        "top": 287.71875,
+        "height": 87.6875,
+        "width": 840
+      },
+      "reference": {
+        "top": 375.40625,
+        "height": 116.34375,
+        "width": 840
+      },
+      "fontSize": "16px",
+      "mainWidth": 1000,
+      "mainScrollWidth": 1000,
+      "documentWidth": 1280,
+      "sourceNotes": 0
+    }
+  ]
+}

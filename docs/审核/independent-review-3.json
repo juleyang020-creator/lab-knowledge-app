@@ -1,0 +1,19 @@
+{
+  "cycle": 3,
+  "reviewedTree": "69fc4a78f6905b44ee6b8275797b8d228f9f4812",
+  "passed": false,
+  "securityConcerns": [],
+  "confirmedResolved": "来源页整包刷新、两层缓存失效、代次与请求身份保护、no-store、偏好保留及前五项问题均已核验。",
+  "logicErrors": [
+    {
+      "severity": "P2",
+      "location": "src/views/DetailView.vue:73; src/views/ReferenceView.vue:44",
+      "finding": "详情和参考页的重试仍仅调用loadAudience。服务端修正catalog后，这两处入口仍可能沿用旧目录缓存而持续失败。",
+      "requiredFix": "统一显式入口重试：先使两层内容缓存失效，再只加载当前audience；保留普通读取缓存、偏好和患者懒加载，并补实际按钮回归。"
+    }
+  ],
+  "status": "paused_after_two_automatic_fix_rounds",
+  "publication": "应用代码尚未commit或push，远端main仍为初始规划文档提交。",
+  "nextDecision": "需要用户确认继续修复；也可选择仅回退缓存刷新相关改动，不能整库reset或删除资料。",
+  "note": "父代理已读取所指两个重试绑定并确认仍为loadAudience；本结论不构成医学审核。"
+}

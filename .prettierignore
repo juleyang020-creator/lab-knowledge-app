@@ -1,0 +1,9 @@
+.hermes/
+private-inputs/
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+pnpm-lock.yaml
+public/pdfjs/

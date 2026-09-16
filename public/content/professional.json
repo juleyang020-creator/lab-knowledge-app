@@ -1,0 +1,767 @@
+{
+  "audience": "professional",
+  "articles": [
+    {
+      "itemId": "glucose",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "glucose.professional.1",
+              "text": "血糖是反映采样时葡萄糖水平的一项检查，不同检查目的和采样状态会影响解读。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "glucose.professional.2",
+              "text": "单次结果不能脱离采样状态、症状和其他信息单独作诊断，也不等同于长期控制情况。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "glucose.professional.3",
+              "text": "葡萄糖检测常用己糖激酶法（己糖激酶与葡萄糖-6-磷酸脱氢酶偶联）或葡萄糖氧化酶法（葡萄糖氧化酶偶联过氧化物酶）。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 162,
+                "quote": "己糖激酶法: 利用己糖激酶和葡萄糖 -6- 磷酸脱氢酶偶联测定"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "glucose.professional.4",
+              "text": "室温下糖酵解会使未分离血清的葡萄糖浓度以每小时5%～7%（0.28～0.56mmol/L）下降，加入氟化钠或碘乙酸钠抑制糖酵解后可在室温下稳定3天。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 163,
+                "quote": "室温下糖酵解会使未分离血清的血液标本中的葡萄糖浓度以每小时"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "hba1c",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "hba1c.professional.1",
+              "text": "HbA1c提供与一段时间内血糖情况有关的信息，与即时血糖反映的观察窗口不同。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "hba1c.professional.2",
+              "text": "红细胞寿命变化、血红蛋白相关因素等可能影响解释，不应机械地与一次血糖数值互相替代。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "hba1c.professional.3",
+              "text": "HbA1c检测方法按电荷、结构差异区分：离子交换高效液相色谱法是检测的“金标准”；另有亲和层析法、免疫化学法和酶法。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 168,
+                "quote": "离子交换高效液相色谱法是 HbA1c 检测的“金标准”"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "hba1c.professional.4",
+              "text": "HbA1c浓度与红细胞寿命（平均120天）及该时期内血糖平均浓度有关，不受每天葡萄糖波动、运动或食物的影响，反映过去2～3个月的平均血糖浓度。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 168,
+                "quote": "HbA1c 的形成是不可逆的"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "alt",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "alt.professional.1",
+              "text": "ALT常作为肝细胞损伤相关评估的参考之一，应结合其他检查与临床信息。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "alt.professional.2",
+              "text": "ALT不是某一种肝脏疾病的专属指标，也不能单独代表肝脏全部功能。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "alt.professional.3",
+              "text": "目前国内外实验室多采用IFCC推荐的连续监测法测定ALT：ALT催化氨基从L-丙氨酸转移到α-酮戊二酸，偶联LDH指示反应，在340nm处连续测定NADH消耗量计算酶活性。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 153,
+                "quote": "目前国内外实验室多采用 IFCC 推荐的连续监测方法对 ALT 进行测定"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "alt.professional.4",
+              "text": "连续监测ALT反应中存在副反应：血清中α-酮酸（如丙酮酸）消耗NADH；血清谷氨酸脱氢酶增高时在有氨存在条件下亦消耗NADH，可使测定结果偏高。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 153,
+                "quote": "连续监测ALT反应中存在两个副反应"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "ast",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "ast.professional.1",
+              "text": "AST分布于多种组织，解释其变化时需考虑肝脏以外的来源。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "ast.professional.2",
+              "text": "不能仅凭AST异常定位病变器官，需结合其他检查与样本情况。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "ast.professional.3",
+              "text": "AST催化L-天冬氨酸和α-酮戊二酸生成草酰乙酸和L-谷氨酸，草酰乙酸在苹果酸脱氢酶作用下与NADH反应，连续测定340nm处NADH吸光度下降速率计算酶活性，属酶偶联法。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 154,
+                "quote": "AST 可催化 L- 天冬氨酸和 $\\alpha$ - 酮戊二酸生成草酰乙酸和 L- 谷氨酸"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "ast.professional.4",
+              "text": "影响血清酶的生理因素包括性别、年龄、饮食、运动、妊娠等；AST不只分布于肝脏，也分布于心肌、骨骼肌和肾脏，相应组织损伤也可使AST升高。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 144,
+                "quote": "影响血清酶的生理因素包括性别、年龄、饮食、运动、妊娠等"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "creatinine",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "creatinine.professional.1",
+              "text": "血肌酐常用于肾功能相关评估，但解读还需考虑肌肉量等个体因素。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "creatinine.professional.2",
+              "text": "一次肌酐结果不能完整反映所有肾脏问题，也不能脱离个人基线机械比较。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "creatinine.professional.3",
+              "text": "肌酐检测方法包括苦味酸速率法（基于Jaffe提出的碱性苦味酸反应）和酶法（肌酐氨基水解酶法、肌氨酸氧化酶法、肌酐亚氨基水解酶法等）。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 133,
+                "quote": "肌酐检测方法包括苦味酸速率法和酶法"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "creatinine.professional.4",
+              "text": "Jaffe反应并非仅对肌酐特异，也可与蛋白质、高浓度葡萄糖、抗坏血酸等物质生成类似色原；肌氨酸氧化酶法的Trinder反应易受胆红素和维生素C干扰。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 134,
+                "quote": "Jaffe 反应并非仅对肌酐特异"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "urea",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "urea.professional.1",
+              "text": "尿素相关结果还受蛋白摄入、分解代谢及水合状态等因素影响，解释时需综合考虑。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "urea.professional.2",
+              "text": "尿素与尿素氮的名称和计量表达应核对报告，不能忽略单位直接比较数值。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "urea.professional.3",
+              "text": "尿素检测方法为酶法：脲酶将尿素分解成铵离子和碳酸根，再利用谷氨酸脱氢酶（GLDH）或Berthelot反应测定铵离子生成量，属间接测定。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 132,
+                "quote": "尿素检测方法为酶法"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "urea.professional.4",
+              "text": "血尿素浓度受蛋白质分解或摄入的影响：高热、上消化道大出血、大面积烧伤、大手术后、高蛋白饮食、甲状腺功能亢进等可使血尿素增高；低蛋白饮食、多饮水、慢性肝脏疾病等可使其下降。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 291,
+                "quote": "血尿素浓度还受到蛋白质分解或摄入的影响"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "lipids",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "lipids.professional.1",
+              "text": "不同血脂指标提供的信息并不相同，应核对报告具体包含的项目，而不是把“血脂”视为单一数值。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "lipids.professional.2",
+              "text": "本试验版不预设本院血脂组合包含哪些项目，也不给出个体化风险分层或治疗目标。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "lipids.professional.3",
+              "text": "总胆固醇常规方法为胆固醇氧化酶-过氧化物酶-4-氨基安替比林和酚法（CHOD-PAP）；甘油三酯常规方法为磷酸甘油氧化酶-过氧化物酶-4-氨基安替比林和酚法（GPO-PAP）。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 186,
+                "quote": "是临床实验室测定血浆 TC 的常规方法"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "lipids.professional.4",
+              "text": "酶法测定TC时，标本中血红蛋白浓度高于2g/L会引起正干扰；胆红素浓度高于0.1g/L时有明显负干扰；维生素C与甲基多巴胺浓度高于治疗水平时会使TC结果偏低。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 187,
+                "quote": "酶法测定 TC 时"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "crp",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "crp.professional.1",
+              "text": "CRP可作为炎症反应相关参考，但不是某一种病因的特异性证明。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "crp.professional.2",
+              "text": "不能仅凭CRP结果确定感染类型或决定用药，需要结合临床信息。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "crp.professional.3",
+              "text": "CRP检测采用免疫散射比浊法等；超敏CRP（hs-CRP）是用检测灵敏性更高的方法所测得的CRP，最低检测限达0.1mg/L，常用乳胶增强免疫比浊法。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 130,
+                "quote": "免疫散射比浊法"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "crp.professional.4",
+              "text": "hs-CRP是用检测灵敏性更高的方法所测得的CRP，以识别低水平但持续存在的炎症；健康人体内CRP水平通常<3mg/L，心血管疾病筛查时应使用高灵敏性方法检测。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 311,
+                "quote": "是用检测灵敏性更高的方法所测得的 CRP"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "tsh",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "tsh.professional.1",
+              "text": "TSH用于甲状腺功能相关评估，具体解读应结合其他甲状腺指标与临床背景。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "tsh.professional.2",
+              "text": "特殊生理状态、用药及其他因素可能改变结果的解释，不能脱离适用条件套用结论。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "title": "检验原理",
+          "claims": [
+            {
+              "id": "tsh.professional.3",
+              "text": "TSH采用化学发光免疫分析（CLIA法）检测，需新鲜血清或血浆。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 231,
+                "quote": "采用 CLIA 法检测"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "title": "影响因素",
+          "claims": [
+            {
+              "id": "tsh.professional.4",
+              "text": "溶血、脂血对TSH测定干扰较大；TSH分泌存在昼夜节律，高峰在清晨2时至4时，低谷在下午5时至6时，一般在清晨起床前采血。",
+              "provenance": {
+                "kind": "document",
+                "sourceId": "biochem-2025",
+                "pdfPage": 231,
+                "quote": "TSH 的分泌存在昼夜节律"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "cbc",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "cbc.professional.1",
+              "text": "血常规中不同细胞相关指标提供不同信息，需结合计数、分类及必要的其他资料解释。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "cbc.professional.2",
+              "text": "单个指标的变化通常不足以确定某一种病因，本试验版不提供诊断阈值。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": "urinalysis",
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "临床参考",
+          "claims": [
+            {
+              "id": "urinalysis.professional.1",
+              "text": "尿液理化性质与有形成分等检查提供的信息有所不同，应核对报告实际项目。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "title": "解读局限",
+          "claims": [
+            {
+              "id": "urinalysis.professional.2",
+              "text": "采集和送检因素可能影响结果，本院具体标本要求仍需文件确认。",
+              "provenance": {
+                "kind": "model",
+                "generatedOn": "2026-09-15"
+              },
+              "reviewStatus": "unreviewed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "glucose-context",
+      "title": "血糖与长期控制",
+      "summary": {
+        "id": "glucose-context.summary",
+        "text": "对照即时血糖与一段时间血糖控制相关信息，理解不同检查关注的侧面。本卡不是固定开单组合。",
+        "provenance": {
+          "kind": "model",
+          "generatedOn": "2026-09-15"
+        },
+        "reviewStatus": "unreviewed"
+      },
+      "itemIds": [
+        "glucose",
+        "hba1c"
+      ]
+    },
+    {
+      "id": "liver-context",
+      "title": "肝酶相关指标",
+      "summary": {
+        "id": "liver-context.summary",
+        "text": "对照常见转氨酶所提供的线索及局限，不根据单项异常自动定位疾病或决定追加检查。",
+        "provenance": {
+          "kind": "model",
+          "generatedOn": "2026-09-15"
+        },
+        "reviewStatus": "unreviewed"
+      },
+      "itemIds": [
+        "alt",
+        "ast"
+      ]
+    },
+    {
+      "id": "kidney-context",
+      "title": "肾功能相关指标",
+      "summary": {
+        "id": "kidney-context.summary",
+        "text": "对照肌酐和尿素的参考意义，并注意影响因素。具体选检仍需结合临床问题与本院目录。",
+        "provenance": {
+          "kind": "model",
+          "generatedOn": "2026-09-15"
+        },
+        "reviewStatus": "unreviewed"
+      },
+      "itemIds": [
+        "creatinine",
+        "urea"
+      ]
+    },
+    {
+      "id": "inflammation-context",
+      "title": "炎症相关信息",
+      "summary": {
+        "id": "inflammation-context.summary",
+        "text": "了解不同检查提供的信息，不将它们视为某一种感染的特异性诊断，也不自动推荐联开。",
+        "provenance": {
+          "kind": "model",
+          "generatedOn": "2026-09-15"
+        },
+        "reviewStatus": "unreviewed"
+      },
+      "itemIds": [
+        "crp",
+        "cbc"
+      ]
+    }
+  ],
+  "guides": []
+}

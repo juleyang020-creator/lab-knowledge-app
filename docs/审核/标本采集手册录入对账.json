@@ -1,0 +1,69 @@
+{
+  "mode": "import",
+  "source": "xwh-manual-2026.md",
+  "sha256": "b18763b787ce90b1539aa209013050b094078d116cbe4e34e4763241b049cba7",
+  "sourceBytes": 234193,
+  "lineCount": 2881,
+  "sectionCount": 233,
+  "tables": 21,
+  "paragraphs": 474,
+  "groups": [
+    {
+      "id": "table-4-1",
+      "name": "临床化学检验项目",
+      "count": 113
+    },
+    {
+      "id": "table-4-2",
+      "name": "临床免疫学检验项目",
+      "count": 105
+    },
+    {
+      "id": "table-4-3",
+      "name": "临床基础检验项目",
+      "count": 55
+    },
+    {
+      "id": "table-4-4",
+      "name": "凝血检验项目",
+      "count": 14
+    },
+    {
+      "id": "table-4-5",
+      "name": "临床微生物学检验项目",
+      "count": 40
+    },
+    {
+      "id": "table-4-6",
+      "name": "特殊检验项目",
+      "count": 74
+    },
+    {
+      "id": "table-4-7",
+      "name": "分子生物检验项目",
+      "count": 49
+    },
+    {
+      "id": "table-4-8",
+      "name": "检验项目组合",
+      "count": 36
+    },
+    {
+      "id": "table-4-9",
+      "name": "外送检验项目",
+      "count": 31
+    }
+  ],
+  "importedItems": 517,
+  "retainedTeachingItems": 11,
+  "retainedBlankRow": {
+    "section": "table-4-7",
+    "line": 2738,
+    "disposition": "全文保留，不生成虚构项目"
+  },
+  "originalCells": 4026,
+  "blankCells": 119,
+  "dittoCells": 94,
+  "restoredSourceIsIdentical": true,
+  "medicalReview": "未校订原文；仅验证录入完整性，不证明医学准确性；来源定位为MD行号和原书页码，未核验原PDF"
+}
