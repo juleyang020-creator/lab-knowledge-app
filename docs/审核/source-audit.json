@@ -1,0 +1,66 @@
+{
+  "verifiedAt": "2026-09-16T00:18:51.915547+08:00",
+  "sourceTitle": "临床生物化学检验技术",
+  "relativeSourcePath": "98-临床生物化学检验技术-人卫2025-第2版/源PDF.pdf",
+  "sourceSha256": "41f8ca8c0a549879672a3186ca89bddf3ee86060603b5f1a5d031920218abfe7",
+  "pdfPages": 415,
+  "verifiedClaims": 9,
+  "medicalReviewCompleted": false,
+  "scope": "只读核对短引文在对应PDF物理页存在，不等于医学审核",
+  "claims": [
+    {
+      "claimId": "glucose.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 162,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "hba1c.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 168,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "alt.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 269,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "ast.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 264,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "creatinine.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 290,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "urea.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 291,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "lipids.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 186,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "crp.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 130,
+      "quoteMatchesPage": true
+    },
+    {
+      "claimId": "tsh.overview",
+      "sourceId": "biochem-2025",
+      "pdfPage": 230,
+      "quoteMatchesPage": true
+    }
+  ]
+}

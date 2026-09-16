@@ -1,0 +1,679 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "id": "xwh-manual-2026",
+      "sourceId": "xwh-manual-2026",
+      "title": "标本采集手册",
+      "edition": "2026版",
+      "year": 2026,
+      "pages": 99,
+      "bytes": 1234970,
+      "sha256": "fdb746314b54e9c5d286fd8886d15d26000aeebc628699c2393de4a58d190c8b",
+      "asset": "library/xwh-manual-2026.pdf",
+      "outline": [],
+      "imageOnly": false,
+      "textSearch": "not-indexed"
+    },
+    {
+      "id": "book-92",
+      "sourceId": "book-92",
+      "title": "临床微生物学检验技术",
+      "edition": "第2版",
+      "year": 2025,
+      "pages": 417,
+      "bytes": 572332304,
+      "sha256": "310579d13b5fb83c3492543e44e9b9c21550478330082879f42640cb11f4977a",
+      "asset": "library/book-92.pdf",
+      "outline": [
+        {
+          "title": "封面",
+          "page": 1,
+          "level": 1
+        },
+        {
+          "title": "版权页",
+          "page": 3,
+          "level": 1
+        },
+        {
+          "title": "目录",
+          "page": 11,
+          "level": 1
+        },
+        {
+          "title": "绪 论",
+          "page": 28,
+          "level": 1
+        },
+        {
+          "title": "第一篇\r\n微生物学概论",
+          "page": 32,
+          "level": 1
+        },
+        {
+          "title": "第一章 微生物学基础知识",
+          "page": 32,
+          "level": 2
+        },
+        {
+          "title": "第二章 微生物的感染和免疫",
+          "page": 51,
+          "level": 2
+        },
+        {
+          "title": "第二篇\r\n微生物检验基本技术",
+          "page": 59,
+          "level": 1
+        },
+        {
+          "title": "第三章 微生物形态学检查法",
+          "page": 60,
+          "level": 2
+        },
+        {
+          "title": "第四章 微生物培养与分离",
+          "page": 67,
+          "level": 2
+        },
+        {
+          "title": "第五章 微生物的鉴定技术",
+          "page": 78,
+          "level": 2
+        },
+        {
+          "title": "第六章 微生物的耐药性检测",
+          "page": 94,
+          "level": 2
+        },
+        {
+          "title": "第七章 医院感染",
+          "page": 110,
+          "level": 2
+        },
+        {
+          "title": "第八章 微生物检验的质量",
+          "page": 115,
+          "level": 2
+        },
+        {
+          "title": "第九章 实验室生物安全",
+          "page": 123,
+          "level": 2
+        },
+        {
+          "title": "第三篇\r\n临床细菌学检验",
+          "page": 129,
+          "level": 1
+        },
+        {
+          "title": "第十章 病原性球菌",
+          "page": 130,
+          "level": 2
+        },
+        {
+          "title": "第十一章 肠杆菌目",
+          "page": 148,
+          "level": 2
+        },
+        {
+          "title": "第十二章 弧菌属和气单胞菌属",
+          "page": 169,
+          "level": 2
+        },
+        {
+          "title": "第十三章 弯曲菌属和螺杆菌属",
+          "page": 178,
+          "level": 2
+        },
+        {
+          "title": "第十四章 非发酵糖菌",
+          "page": 184,
+          "level": 2
+        },
+        {
+          "title": "第十五章 其他革兰氏阴性杆菌",
+          "page": 200,
+          "level": 2
+        },
+        {
+          "title": "第十六章 需氧革兰氏阳性杆菌",
+          "page": 211,
+          "level": 2
+        },
+        {
+          "title": "第十七章 分枝杆菌属",
+          "page": 227,
+          "level": 2
+        },
+        {
+          "title": "第十八章 放线菌",
+          "page": 238,
+          "level": 2
+        },
+        {
+          "title": "第十九章 厌氧性细菌",
+          "page": 242,
+          "level": 2
+        },
+        {
+          "title": "第二十章 其他病原体",
+          "page": 258,
+          "level": 2
+        },
+        {
+          "title": "第四篇\r\n临床真菌学检验",
+          "page": 280,
+          "level": 1
+        },
+        {
+          "title": "第二十一章 念珠菌属",
+          "page": 280,
+          "level": 2
+        },
+        {
+          "title": "第二十二章 隐球菌属",
+          "page": 285,
+          "level": 2
+        },
+        {
+          "title": "第二十三章 曲霉属",
+          "page": 289,
+          "level": 2
+        },
+        {
+          "title": "第二十四章 其他临床重要致病性真",
+          "page": 294,
+          "level": 2
+        },
+        {
+          "title": "第五篇\r\n临床病毒学检验",
+          "page": 304,
+          "level": 1
+        },
+        {
+          "title": "第二十五章呼吸道病毒",
+          "page": 305,
+          "level": 2
+        },
+        {
+          "title": "第二十六章 肠道",
+          "page": 315,
+          "level": 2
+        },
+        {
+          "title": "第二十七章 肝炎病毒",
+          "page": 324,
+          "level": 2
+        },
+        {
+          "title": "第二十八章 逆转录病毒",
+          "page": 336,
+          "level": 2
+        },
+        {
+          "title": "第二十九章 疱疹病毒",
+          "page": 342,
+          "level": 2
+        },
+        {
+          "title": "第三十章其他重要病毒",
+          "page": 353,
+          "level": 2
+        },
+        {
+          "title": "第六篇\r\n临床标本的微生物学检验",
+          "page": 362,
+          "level": 1
+        },
+        {
+          "title": "第三十一章 临床标本的微生物学检验概论",
+          "page": 363,
+          "level": 2
+        },
+        {
+          "title": "第三十二章 血液和无菌体液标本的微生物学\r\n检验",
+          "page": 367,
+          "level": 2
+        },
+        {
+          "title": "第三十三章 下呼吸道标本的微生物学检验",
+          "page": 373,
+          "level": 2
+        },
+        {
+          "title": "第三十四章 上呼吸道标本的微生物学检",
+          "page": 379,
+          "level": 2
+        },
+        {
+          "title": "第三十五章 泌尿系统标本的微生物学检验",
+          "page": 384,
+          "level": 2
+        },
+        {
+          "title": "第三十六章 胃肠道标本的微生物学检验",
+          "page": 387,
+          "level": 2
+        },
+        {
+          "title": "第三十七章 生殖道标本的微生物学检验",
+          "page": 392,
+          "level": 2
+        },
+        {
+          "title": "第三十八章 脑脊液标本的微生物学检",
+          "page": 396,
+          "level": 2
+        },
+        {
+          "title": "第三十九章 组织标本的微生物学检验",
+          "page": 401,
+          "level": 2
+        },
+        {
+          "title": "推荐阅读",
+          "page": 407,
+          "level": 1
+        },
+        {
+          "title": "中英文名词对照索引",
+          "page": 408,
+          "level": 1
+        },
+        {
+          "title": "封底",
+          "page": 416,
+          "level": 1
+        }
+      ],
+      "imageOnly": false,
+      "textSearch": "not-indexed"
+    },
+    {
+      "id": "book-96",
+      "sourceId": "book-96",
+      "title": "全国临床检验操作规程",
+      "edition": "第4版",
+      "year": 2015,
+      "pages": 1089,
+      "bytes": 473773415,
+      "sha256": "dbd57cde3bbd418dab203582b2684e77f27a47a074beb22393752ffc6476acd4",
+      "asset": "library/book-96.pdf",
+      "outline": [
+        {
+          "title": "封面",
+          "page": 1,
+          "level": 1
+        },
+        {
+          "title": "书名",
+          "page": 2,
+          "level": 1
+        },
+        {
+          "title": "版权",
+          "page": 3,
+          "level": 1
+        },
+        {
+          "title": "前言",
+          "page": 4,
+          "level": 1
+        },
+        {
+          "title": "目录",
+          "page": 8,
+          "level": 1
+        },
+        {
+          "title": "封底",
+          "page": 1089,
+          "level": 1
+        }
+      ],
+      "imageOnly": true,
+      "textSearch": "not-indexed"
+    },
+    {
+      "id": "book-97",
+      "sourceId": "book-97",
+      "title": "临床分子生物学检验技术",
+      "edition": "第1版",
+      "year": 2015,
+      "pages": 289,
+      "bytes": 71843535,
+      "sha256": "8494fea9ac8ab536f62d5869fcea4092e19acb5b4235afcd51c055b7fadc0a22",
+      "asset": "library/book-97.pdf",
+      "outline": [
+        {
+          "title": "封面",
+          "page": 1,
+          "level": 1
+        },
+        {
+          "title": "书名",
+          "page": 2,
+          "level": 1
+        },
+        {
+          "title": "版权",
+          "page": 3,
+          "level": 1
+        },
+        {
+          "title": "前言",
+          "page": 4,
+          "level": 1
+        },
+        {
+          "title": "目录",
+          "page": 10,
+          "level": 1
+        },
+        {
+          "title": "第一章  绪论",
+          "page": 11,
+          "level": 1
+        },
+        {
+          "title": "第二章  临床分子生物学检验标志物",
+          "page": 19,
+          "level": 1
+        },
+        {
+          "title": "第三章  临床标本处理与分离纯化技术",
+          "page": 37,
+          "level": 1
+        },
+        {
+          "title": "第四章  核酸杂交技术",
+          "page": 46,
+          "level": 1
+        },
+        {
+          "title": "第五章  核酸体外扩增及定性检测技术",
+          "page": 67,
+          "level": 1
+        },
+        {
+          "title": "第六章  核酸实时定量检测技术",
+          "page": 83,
+          "level": 1
+        },
+        {
+          "title": "第七章  核酸序列分析",
+          "page": 94,
+          "level": 1
+        },
+        {
+          "title": "第八章  蛋白质组学技术",
+          "page": 109,
+          "level": 1
+        },
+        {
+          "title": "第九章  分子生物学检验新技术",
+          "page": 123,
+          "level": 1
+        },
+        {
+          "title": "第十章  病毒病的分子生物学检验",
+          "page": 131,
+          "level": 1
+        },
+        {
+          "title": "第十一章  细菌感染性疾病的分子生物学检验",
+          "page": 148,
+          "level": 1
+        },
+        {
+          "title": "第十二章  真菌及其他感染性疾病的分子生物学检验",
+          "page": 161,
+          "level": 1
+        },
+        {
+          "title": "第十三章  单基因遗传病的分子生物学检验技术",
+          "page": 172,
+          "level": 1
+        },
+        {
+          "title": "第十四章  染色体病的分子生物学检验技术",
+          "page": 193,
+          "level": 1
+        },
+        {
+          "title": "第十五章  线粒体病的分子生物学检验技术",
+          "page": 209,
+          "level": 1
+        },
+        {
+          "title": "第十六章  肿瘤的分子生物学检验技术",
+          "page": 226,
+          "level": 1
+        },
+        {
+          "title": "第十七章  药物代谢与毒副作用相关基因的分子生物学检验技术",
+          "page": 248,
+          "level": 1
+        },
+        {
+          "title": "第十八章  移植配型及个体识别的分子生物学检验",
+          "page": 256,
+          "level": 1
+        },
+        {
+          "title": "第十九章  胚胎植入前分子生物学检验技术",
+          "page": 264,
+          "level": 1
+        },
+        {
+          "title": "第二十章  临床分子生物学检验质量控制",
+          "page": 270,
+          "level": 1
+        },
+        {
+          "title": "参考文献",
+          "page": 282,
+          "level": 2
+        },
+        {
+          "title": "中英文名词对照索引",
+          "page": 284,
+          "level": 2
+        },
+        {
+          "title": "封底",
+          "page": 289,
+          "level": 1
+        }
+      ],
+      "imageOnly": true,
+      "textSearch": "not-indexed"
+    },
+    {
+      "id": "book-98",
+      "sourceId": "biochem-2025",
+      "title": "临床生物化学检验技术",
+      "edition": "第2版",
+      "year": 2025,
+      "pages": 415,
+      "bytes": 586652565,
+      "sha256": "41f8ca8c0a549879672a3186ca89bddf3ee86060603b5f1a5d031920218abfe7",
+      "asset": "library/book-98.pdf",
+      "outline": [
+        {
+          "title": "封面",
+          "page": 1,
+          "level": 1
+        },
+        {
+          "title": "版权页",
+          "page": 3,
+          "level": 1
+        },
+        {
+          "title": "目录",
+          "page": 11,
+          "level": 1
+        },
+        {
+          "title": "第一章 绪 论",
+          "page": 23,
+          "level": 1
+        },
+        {
+          "title": "第一篇\r\n临床生物化学检验原理和技术",
+          "page": 32,
+          "level": 1
+        },
+        {
+          "title": "第二章 临床生物化学检验方法性",
+          "page": 33,
+          "level": 2
+        },
+        {
+          "title": "第三章 临床生物化学检验诊断性能评价",
+          "page": 52,
+          "level": 2
+        },
+        {
+          "title": "第四章 临床生物化学检验基本技术",
+          "page": 71,
+          "level": 2
+        },
+        {
+          "title": "第二篇\r\n代谢物质的生物化学检验",
+          "page": 115,
+          "level": 1
+        },
+        {
+          "title": "第五章 氨基酸和蛋白质的生物化学",
+          "page": 116,
+          "level": 2
+        },
+        {
+          "title": "第六章非蛋白含氮化合物的生物化学检",
+          "page": 131,
+          "level": 2
+        },
+        {
+          "title": "第七章 酶和同工酶的生物化学检验",
+          "page": 142,
+          "level": 2
+        },
+        {
+          "title": "第八章 糖及相关代谢物的生物化学检验",
+          "page": 158,
+          "level": 2
+        },
+        {
+          "title": "第九章 脂类和脂蛋白的生物化学检验",
+          "page": 178,
+          "level": 2
+        },
+        {
+          "title": "第十章 电解质和血液气体的生物化学检验",
+          "page": 196,
+          "level": 2
+        },
+        {
+          "title": "第十一章 维生素和微量元素的生物化学检验",
+          "page": 210,
+          "level": 2
+        },
+        {
+          "title": "第三篇  器官-系统功能评价的生物化学检验",
+          "page": 224,
+          "level": 1
+        },
+        {
+          "title": "第十二章 内分泌疾病的生物化学检验",
+          "page": 224,
+          "level": 2
+        },
+        {
+          "title": "第十三章 骨代谢紊乱的生物化学检验",
+          "page": 241,
+          "level": 2
+        },
+        {
+          "title": "第十四章 肝胆疾病的生物化学检验",
+          "page": 254,
+          "level": 2
+        },
+        {
+          "title": "第十五章 胃肠胰腺疾病的生物化学检验",
+          "page": 272,
+          "level": 2
+        },
+        {
+          "title": "第十六章 肾脏疾病的生物化学检验",
+          "page": 286,
+          "level": 2
+        },
+        {
+          "title": "第十七章 心血管疾病的生物化学检验",
+          "page": 301,
+          "level": 2
+        },
+        {
+          "title": "第十八章 神经及精神疾病的生物化学检验",
+          "page": 316,
+          "level": 2
+        },
+        {
+          "title": "第四篇\r\n其他类型的生物化学检验",
+          "page": 332,
+          "level": 1
+        },
+        {
+          "title": "第十九章 肿瘤的生物化学检验",
+          "page": 333,
+          "level": 2
+        },
+        {
+          "title": "第二十章 临床毒物检验",
+          "page": 350,
+          "level": 2
+        },
+        {
+          "title": "第二十一章 治疗药物监测",
+          "page": 363,
+          "level": 2
+        },
+        {
+          "title": "第二十二章 妊娠和新生儿的生物化学检验",
+          "page": 379,
+          "level": 2
+        },
+        {
+          "title": "第二十三章 老年疾病的生物化学检验",
+          "page": 393,
+          "level": 2
+        },
+        {
+          "title": "推荐阅读",
+          "page": 401,
+          "level": 2
+        },
+        {
+          "title": "中英文名词对照索引",
+          "page": 402,
+          "level": 2
+        },
+        {
+          "title": "封底",
+          "page": 414,
+          "level": 1
+        }
+      ],
+      "imageOnly": false,
+      "textSearch": "not-indexed"
+    }
+  ],
+  "totals": {
+    "documents": 5,
+    "pages": 2309,
+    "bytes": 1705836789
+  }
+}

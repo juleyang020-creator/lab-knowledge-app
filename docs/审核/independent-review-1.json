@@ -1,0 +1,55 @@
+{
+  "cycle": 1,
+  "reviewedTree": "1af9561f24cba2e90255951ea91e1efd1a65436a",
+  "passed": false,
+  "securityConcerns": [],
+  "logicErrors": [
+    {
+      "severity": "P2",
+      "location": "src/views/SourcesView.vue:38-46",
+      "finding": "按段落编号前缀推断项目归属，合法跨前缀编号会造成统计错归。",
+      "requiredFix": "依据catalog和articles.itemId的结构关系收集，主题和指南单独统计。"
+    },
+    {
+      "severity": "P2",
+      "location": "src/domain/content.ts:88-90",
+      "finding": "空sections可通过校验，正文缺失被当作完成加载。",
+      "requiredFix": "本试验阶段要求每篇文章至少一个有效分节。"
+    },
+    {
+      "severity": "P2",
+      "location": "src/views/DetailView.vue:97-99",
+      "finding": "非空本院字段只显示文字，没有显示文件出处。",
+      "requiredFix": "非空字段使用带来源、页码和引文的展示组件。"
+    },
+    {
+      "severity": "P2",
+      "location": "src/domain/navigation.ts:4-9",
+      "finding": "实际路由支持的尾斜杠详情地址在切换入口时丢失项目。",
+      "requiredFix": "按已匹配路由名称与参数构造目标，补实际浏览器回归。"
+    },
+    {
+      "severity": "P2",
+      "location": "src/components/FeedbackDraft.vue:11-15",
+      "finding": "路由复用时旧纠错内容可能被新项目或入口重新归属。",
+      "requiredFix": "按项目和入口隔离或重置纠错组件状态。"
+    }
+  ],
+  "additionalDecisions": [
+    "统一模型概述徽章的待核实措辞。",
+    "将Node支持范围收敛为已实测22.23.1所在22系，CI固定22.23.1，不升级全局Node或依赖。",
+    "CI报告自动上传为非阻塞建议，本修复回合暂不扩展。"
+  ],
+  "status": "fixed_pending_independent_rereview",
+  "note": "父代理读取所指代码后已确认结构问题；第三上下文负责先复现再修复。医学审核仍未完成。",
+  "parentVerification": {
+    "unitTests": 69,
+    "e2eTests": 58,
+    "viewportStates": 176,
+    "typeCheck": true,
+    "lint": true,
+    "build": true,
+    "productionDataChanged": false,
+    "lockfileChanged": false
+  }
+}

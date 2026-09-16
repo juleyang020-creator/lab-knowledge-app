@@ -1,0 +1,22 @@
+{
+  "scope": "第二轮修复后的暂存新增行扫描，不替代独立审查或医学审核",
+  "fixRound": 2,
+  "patternFindings": {
+    "credential_tokens": [],
+    "private_key_material": [],
+    "unsafe_eval": [],
+    "shell_injection_primitives": [],
+    "unsafe_html_binding": []
+  },
+  "originalDocumentsStaged": false,
+  "baseline": "原main仅产品文档，无既有应用测试套件",
+  "localChecks": {
+    "unitTests": 91,
+    "e2eTests": 60,
+    "viewportStates": 176,
+    "typeCheck": true,
+    "lint": true,
+    "build": true
+  },
+  "dependencyAudit": "此前父代理重跑pnpm audit --prod未发现已知漏洞，此后依赖与锁文件未改。"
+}

@@ -1,0 +1,427 @@
+.directory-tools {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+.directory-tools > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-height: 60px;
+  padding: 10px 14px;
+  background: var(--accent-soft);
+  border-radius: 9px;
+}
+.directory-tools strong {
+  font-size: 12px;
+  color: var(--accent);
+}
+.directory-tools span {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.kind-switch {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.kind-switch button {
+  min-height: 44px;
+  padding: 8px 13px;
+  border: 1px solid transparent;
+  background: var(--surface-alt);
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.kind-switch button[aria-pressed='true'] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 650;
+}
+.item-card.panel-card {
+  border-top: 3px solid var(--accent);
+}
+.card-specimen {
+  display: grid;
+  gap: 3px;
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.card-specimen > span:first-child,
+.card-members-label {
+  color: var(--muted);
+  font-size: 11px;
+}
+.card-members-label {
+  margin: 0 0 4px;
+}
+.card-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 4px;
+}
+.card-members > a,
+.card-members > span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 6px 9px;
+  background: var(--surface-alt);
+  border-radius: 6px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.card-members > a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.card-members > span {
+  color: var(--muted);
+}
+.card-members-more {
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+.item-card .card-summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: initial;
+}
+.item-card .card-bottom {
+  margin-top: auto;
+}
+.knowledge-muted {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.knowledge-warning {
+  color: var(--warning);
+  background: var(--warning-bg);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 12px;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 8px;
+  color: var(--accent);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+.knowledge-overview .eyebrow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.knowledge-overview .specimen-overview {
+  border-top: 3px solid var(--accent);
+}
+.specimen-value {
+  font-size: 21px;
+  font-weight: 650;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.clinical-text {
+  font-size: 14px;
+  line-height: 1.95;
+  white-space: pre-line;
+}
+.collection-reading {
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+  padding-top: 6px;
+}
+.collection-reading summary,
+.member-row summary,
+.raw-record > summary {
+  min-height: 48px;
+  padding: 12px 4px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+.collection-excerpt {
+  border-left: 2px solid var(--line);
+  padding-left: 14px;
+  margin-top: 12px;
+}
+.collection-excerpt p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.relation-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.member-list {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.member-row + .member-row {
+  border-top: 1px solid var(--line);
+}
+.member-row summary {
+  padding: 12px 16px;
+  background: var(--surface-alt);
+}
+.member-token {
+  font-weight: 650;
+}
+.member-status {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  padding-left: 18px;
+}
+.member-reading {
+  padding: 12px 18px;
+  border-top: 1px solid var(--line);
+}
+.member-reading p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.member-name {
+  font-size: 14px;
+  font-weight: 650;
+}
+.related-panels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.related-panels a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  font-size: 13px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.raw-record {
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  min-width: 0;
+}
+.raw-record > summary {
+  padding: 16px 20px;
+  color: var(--muted);
+}
+.raw-record > .content-section {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0 0 12px 12px;
+}
+
+/* Keep the main tools on one scrollable row instead of a tall mobile header. */
+.top-shell .section-nav {
+  flex-wrap: nowrap;
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.top-shell .section-nav > a {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.specimen-search {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 14px;
+}
+.specimen-search > label {
+  display: block;
+  font-weight: 650;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.specimen-search .search-field {
+  border: 1px solid var(--line);
+  background: var(--surface-alt);
+  border-radius: 10px;
+}
+.specimen-search > .knowledge-muted {
+  margin-top: 12px;
+}
+.query-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+.query-examples button {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+.query-privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  margin: 18px 0 0;
+}
+.query-privacy svg {
+  margin-top: 3px;
+}
+.specimen-results-heading {
+  margin: 28px 0 16px;
+}
+.specimen-results-heading h2 {
+  margin-bottom: 6px;
+}
+.specimen-results-heading p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.specimen-result-grid,
+.collection-library-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.specimen-result {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.specimen-result h3 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.result-specimen {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  background: var(--accent-soft);
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+.result-specimen > span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.result-specimen strong {
+  font-size: 15px;
+  line-height: 1.8;
+}
+.match-evidence h4 {
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+.match-evidence p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 4px 0 14px;
+}
+.match-evidence > div > span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.specimen-result > .text-link {
+  gap: 8px;
+}
+.collection-library {
+  margin-top: 28px;
+}
+.section-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+.section-title-row h2 {
+  margin: 0;
+}
+.section-title-row > span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.collection-library-grid > a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.collection-library-grid strong {
+  font-size: 15px;
+}
+.collection-library-grid span {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.collection-library-grid small {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--accent);
+}
+@media (max-width: 600px) {
+  .specimen-result-grid,
+  .collection-library-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .specimen-search,
+  .specimen-result {
+    padding: 18px;
+  }
+  .top-shell .section-nav {
+    gap: 20px;
+  }
+}

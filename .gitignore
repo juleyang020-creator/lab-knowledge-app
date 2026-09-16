@@ -27,6 +27,10 @@ playwright-report/
 
 # Raw private inputs must never be committed
 private-inputs/
+# Local reference PDFs are not authorized for publication.
+public/library/*.pdf
+public/library/*.tmp
+public/pdfjs/
 
 # Optional future Python data-processing tools
 __pycache__/

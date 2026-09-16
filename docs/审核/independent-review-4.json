@@ -1,0 +1,39 @@
+{
+  "cycle": 4,
+  "date": "2026-09-16",
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [
+    {
+      "path": "打开检验知识库-Windows.cmd:1",
+      "suggestion": "交付给 Windows 用户前补做实机双击验收，覆盖中文及特殊字符路径、首次安装、重复启动和退出。当前命令结构与共用逻辑检查不能替代 Windows 实测；现有说明已正确披露此限制。"
+    }
+  ],
+  "summary": "独立审查完整核对本轮10个代码和入口文件，未发现阻塞性安全或逻辑错误；已只读验证缓存刷新、失败恢复、偏好保留、旧请求隔离与启动服务识别。",
+  "reviewedFiles": [
+    "src/state/workspace.ts",
+    "src/views/DetailView.vue",
+    "src/views/ReferenceView.vue",
+    "src/__tests__/ReadingRetry.spec.ts",
+    "e2e/reading-retry.spec.ts",
+    "scripts/launch.mjs",
+    "scripts/launcher.spec.mjs",
+    "打开检验知识库-macOS.command",
+    "打开检验知识库-Windows.cmd",
+    "e2e/launcher.spec.mjs"
+  ],
+  "parentVerification": {
+    "node": "22.23.1",
+    "pnpm": "11.17.0",
+    "pnpmCheck": "passed",
+    "unitAndLauncherTests": 112,
+    "browserTests": 70,
+    "browserEngines": ["chromium", "webkit"],
+    "formatCheck": "passed",
+    "macOSLauncher": "真实桌面打开、既有依赖、首次锁定安装、特殊字符路径、重复运行、退出释放端口均通过",
+    "windowsLauncher": "仅脚本编码及命令分支检查，未做Windows实机验收"
+  },
+  "publication": "未commit、未push、未运行托管CI，未改变原有暂存内容。",
+  "note": "这是本轮软件补丁审查，不代表医学内容审核；历史第三轮失败记录保留。"
+}
