@@ -14,7 +14,7 @@ for (const failure of ['network', 'mismatched-source']) {
         contentType: 'text/markdown; charset=utf-8',
       })
     })
-    await page.goto('/#/professional/manual?section=preface')
+    await page.goto('/#/manual?section=preface')
     await expect(page.getByRole('alert')).toContainText(
       failure === 'network' ? '503' : '版本不一致',
     )
@@ -27,7 +27,7 @@ for (const failure of ['network', 'mismatched-source']) {
 }
 
 test('非法章节不默默跳到别处，输入搜索不会触发HTML，目录链接使用路由', async ({ page }) => {
-  await page.goto('/#/patient/manual?section=does-not-exist')
+  await page.goto('/#/manual?section=does-not-exist')
   await expect(page.getByRole('heading', { name: '未找到这个章节', exact: true })).toBeVisible()
   await page.getByRole('button', { name: '返回手册封面', exact: true }).click()
   await expect(page.locator('.manual-reading h2')).toHaveText('标本采集手册')

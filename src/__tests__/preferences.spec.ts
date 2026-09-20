@@ -11,13 +11,12 @@ function memoryStorage() {
   }
 }
 describe('无需账户的本地阅读偏好', () => {
-  it('收藏和阅读入口可以保存后恢复', () => {
+  it('收藏可以保存后恢复', () => {
     expect(writePreferences).toBeTypeOf('function')
     const storage = memoryStorage()
-    expect(writePreferences(storage, { savedIds: ['glucose'], audience: 'patient' })).toBe(true)
+    expect(writePreferences(storage, { savedIds: ['glucose'] })).toBe(true)
     expect(readPreferences(storage)).toEqual({
       savedIds: ['glucose'],
-      audience: 'patient',
       persistent: true,
     })
   })
@@ -32,7 +31,6 @@ describe('无需账户的本地阅读偏好', () => {
       PREFERENCE_KEY,
       JSON.stringify({
         savedIds: ['glucose', 'missing', 'glucose', '../bad'],
-        audience: 'professional',
       }),
     )
     expect(readPreferences(storage, ['glucose']).savedIds).toEqual(['glucose'])
@@ -47,12 +45,15 @@ describe('无需账户的本地阅读偏好', () => {
       },
     }
     expect(readPreferences(storage).persistent).toBe(false)
-    expect(writePreferences(storage, { savedIds: [], audience: null })).toBe(false)
+    expect(writePreferences(storage, { savedIds: [] })).toBe(false)
     expect(readPreferences(null).persistent).toBe(false)
   })
-  it('不把任意身份值当作有效阅读入口', () => {
+  it('旧版本存储的阅读入口字段被忽略', () => {
     const storage = memoryStorage()
-    storage.setItem(PREFERENCE_KEY, JSON.stringify({ savedIds: [], audience: 'administrator' }))
-    expect(readPreferences(storage).audience).toBe(null)
+    storage.setItem(
+      PREFERENCE_KEY,
+      JSON.stringify({ savedIds: ['glucose'], audience: 'administrator' }),
+    )
+    expect(readPreferences(storage)).toEqual({ savedIds: ['glucose'], persistent: true })
   })
 })

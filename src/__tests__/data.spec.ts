@@ -12,7 +12,6 @@ describe('实际发布内容', () => {
     const bundle = validateBundle({
       catalog: load('catalog'),
       professional: load('professional'),
-      patient: load('patient'),
     })
     const stats = evidenceStats(collectClaims(bundle))
     expect(bundle.catalog.items.length).toBeGreaterThan(0)

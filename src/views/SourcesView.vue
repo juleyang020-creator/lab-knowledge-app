@@ -4,68 +4,56 @@ import { RouterLink, useRoute } from 'vue-router'
 import { BookOpen, ArrowRight, Files } from '@lucide/vue'
 import ErrorPanel from '../components/ErrorPanel.vue'
 import {
-  validateBundle,
-  collectClaims,
-  collectItemClaims,
+  collectProfessionalClaims,
+  collectProfessionalItemClaims,
   referenceClaims,
 } from '../domain/validation'
 import { evidenceStats } from '../domain/provenance'
 import type { EvidenceStats } from '../domain/provenance'
-import type { ContentBundle } from '../domain/content'
 import { useWorkspace } from '../state/workspace'
 const workspace = useWorkspace()
 const route = useRoute()
 const baseUrl = import.meta.env.BASE_URL
 const { state } = workspace
-const bundle = ref<ContentBundle | null>(null)
 const stats = ref<EvidenceStats | null>(null)
-const error = ref('')
+const loading = ref(true)
 async function load(): Promise<void> {
-  error.value = ''
-  bundle.value = null
-  stats.value = null
-  const loaded = await Promise.all([
-    workspace.loadAudience('professional'),
-    workspace.loadAudience('patient'),
-  ])
-  if (!loaded.every(Boolean)) {
-    error.value = '部分资料未能加载，暂时不能统计来源。'
-    return
-  }
+  loading.value = true
   try {
-    const validated = validateBundle({
-      catalog: state.catalog,
-      professional: state.payloads.professional,
-      patient: state.payloads.patient,
-    })
-    bundle.value = validated
-    stats.value = evidenceStats(collectClaims(validated))
-  } catch {
-    error.value = '资料之间的来源信息不一致，请检查内容文件后重试。'
+    stats.value =
+      (await workspace.loadSourcesQA()) && state.qa
+        ? evidenceStats(collectProfessionalClaims(state.qa.catalog, state.qa.professional))
+        : null
+  } finally {
+    loading.value = false
   }
 }
 async function retry(): Promise<void> {
-  workspace.invalidateContent()
-  await load()
+  loading.value = true
+  try {
+    stats.value =
+      (await workspace.retrySourcesQA()) && state.qa
+        ? evidenceStats(collectProfessionalClaims(state.qa.catalog, state.qa.professional))
+        : null
+  } finally {
+    loading.value = false
+  }
 }
 const rows = computed(() => {
-  const content = bundle.value
-  return (
-    content?.catalog.items
-      .filter((item) => !item.manual)
-      .map((item) => ({
-        item,
-        stats: evidenceStats(collectItemClaims(content, item.id)),
-      })) ?? []
-  )
+  const bundle = state.qa
+  if (!bundle) return []
+  return bundle.catalog.items
+    .filter((item) => !item.manual)
+    .map((item) => ({
+      item,
+      stats: evidenceStats(
+        collectProfessionalItemClaims(bundle.catalog, bundle.professional, item.id),
+      ),
+    }))
 })
-const otherModelCount = computed(() => {
-  const content = bundle.value
-  return content
-    ? evidenceStats([...referenceClaims(content.professional), ...referenceClaims(content.patient)])
-        .model
-    : 0
-})
+const otherModelCount = computed(() =>
+  state.qa ? evidenceStats(referenceClaims(state.qa.professional)).model : 0,
+)
 watch([() => route.query.source, stats], async () => {
   if (!stats.value || typeof route.query.source !== 'string') return
   await nextTick()
@@ -81,12 +69,12 @@ onMounted(load)
       <span class="eyebrow">从试验内容，逐步走向文件依据</span>
       <h1>来源与补全进度</h1>
       <p>
-        统计共用概述与两端解读段落，不包括手册全文的每个单元格；手册录入规模单列，不代表医学审核完成度。
+        统计专业端说明段落，不包括手册全文的每个单元格；手册录入规模单列，不代表医学审核完成度。
       </p>
     </div>
   </header>
-  <ErrorPanel v-if="error" :message="error" @retry="retry" />
-  <div v-else-if="!stats" class="loading-panel" role="status">正在汇总两端的来源信息…</div>
+  <ErrorPanel v-if="state.qaError" :message="state.qaError" @retry="retry" />
+  <div v-else-if="loading || !stats" class="loading-panel" role="status">正在汇总来源信息…</div>
   <template v-else>
     <section class="source-metrics" aria-label="医学说明来源统计">
       <div>
@@ -139,9 +127,7 @@ onMounted(load)
               }}
               条有名称记录。原书空白行仅在全文保留；原文未校订。</small
             >
-            <RouterLink class="manual-source-link" to="/professional/manual"
-              >阅读完整手册</RouterLink
-            >
+            <RouterLink class="manual-source-link" to="/manual">阅读完整手册</RouterLink>
             <ul>
               <li v-for="group in source.manual.groups" :key="group.id">
                 {{ group.name }}：{{ group.count }} 条
@@ -149,7 +135,9 @@ onMounted(load)
             </ul>
           </template>
           <small v-else>{{
-            source.asset ? '完整原PDF已接入资料库；尚未逐项整理整本教材。' : '尚未接入原文件。'
+            source.asset
+              ? '完整原PDF已接入资料库；教材全文按章接入「读教材」模块。'
+              : '尚未接入原文件。'
           }}</small>
           <a
             v-if="source.asset"
@@ -164,10 +152,10 @@ onMounted(load)
     </section>
     <section class="coverage-items">
       <h2>通用教学项目的待补内容</h2>
-      <p>原有通用教学项目的共用概述、专业说明与患者说明合并统计；手册照录记录的规模见上方分组。</p>
+      <p>原有通用教学项目的概述与专业说明合并统计；手册照录记录的规模见上方分组。</p>
       <div class="coverage-list">
         <div v-for="row in rows" :key="row.item.id" class="coverage-row">
-          <RouterLink :to="`/professional/items/${row.item.id}`"
+          <RouterLink :to="`/items/${row.item.id}`"
             >{{ row.item.name }}<ArrowRight :size="15" aria-hidden="true"
           /></RouterLink>
           <div>

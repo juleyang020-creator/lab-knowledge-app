@@ -17,7 +17,13 @@
     "content:check": "node --experimental-strip-types scripts/validate-content.ts",
     "manual:import": "node --experimental-strip-types scripts/import-manual.ts",
     "manual:check": "node --experimental-strip-types scripts/import-manual.ts --check",
-    "check": "pnpm type-check && pnpm lint && pnpm test && pnpm content:check && pnpm manual:check && vite build"
+    "books:import": "node --experimental-strip-types scripts/import-textbooks.ts",
+    "books:check": "node --experimental-strip-types scripts/import-textbooks.ts --check",
+    "books-items:extract": "node --experimental-strip-types scripts/extract-book-items.ts",
+    "books-items:check": "node --experimental-strip-types scripts/extract-book-items.ts --check",
+    "diseases:build": "node --experimental-strip-types scripts/build-diseases.ts",
+    "diseases:check": "node --experimental-strip-types scripts/build-diseases.ts --check",
+    "check": "pnpm type-check && pnpm lint && pnpm test && pnpm content:check && pnpm manual:check && pnpm books:check && pnpm books-items:check && pnpm diseases:check && vite build"
   },
   "dependencies": {
     "@lucide/vue": "1.46.0",

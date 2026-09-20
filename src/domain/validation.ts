@@ -59,11 +59,33 @@ export function collectItemClaims(bundle: ContentBundle, itemId: string): Claim[
   return [
     item.summary,
     ...Object.values(item.institutional).filter((claim): claim is Claim => claim !== null),
-    ...[bundle.professional, bundle.patient].flatMap((payload) =>
-      payload.articles
-        .filter((article) => article.itemId === itemId)
-        .flatMap((article) => article.sections.flatMap((section) => section.claims)),
-    ),
+    ...bundle.professional.articles
+      .filter((article) => article.itemId === itemId)
+      .flatMap((article) => article.sections.flatMap((section) => section.claims)),
+  ]
+}
+
+/** 单入口（专业端）聚合：患者载荷不进入 UI 统计。 */
+export function collectProfessionalClaims(
+  catalog: Catalog,
+  professional: AudiencePayload,
+): Claim[] {
+  return [...catalogClaims(catalog), ...audienceClaims(professional)]
+}
+
+export function collectProfessionalItemClaims(
+  catalog: Catalog,
+  professional: AudiencePayload,
+  itemId: string,
+): Claim[] {
+  const item = catalog.items.find((entry) => entry.id === itemId)
+  if (!item) return []
+  return [
+    item.summary,
+    ...Object.values(item.institutional).filter((claim): claim is Claim => claim !== null),
+    ...professional.articles
+      .filter((article) => article.itemId === itemId)
+      .flatMap((article) => article.sections.flatMap((section) => section.claims)),
   ]
 }
 
@@ -191,11 +213,7 @@ export function validateAudience(
 }
 
 export function collectClaims(bundle: ContentBundle): Claim[] {
-  return [
-    ...catalogClaims(bundle.catalog),
-    ...audienceClaims(bundle.professional),
-    ...audienceClaims(bundle.patient),
-  ]
+  return [...catalogClaims(bundle.catalog), ...audienceClaims(bundle.professional)]
 }
 
 export function validateBundle(
@@ -208,7 +226,6 @@ export function validateBundle(
   const bundle = {
     catalog,
     professional: validateAudience(raw.professional, catalog, 'professional'),
-    patient: validateAudience(raw.patient, catalog, 'patient'),
   }
   const claims = collectClaims(bundle)
   requireUnique(

@@ -7,7 +7,7 @@ test('手机打开即可搜索，词条正文连贯且重点可一键定位', as
   await expect(search).toBeVisible()
   await search.fill('GLU')
   const row = page
-    .locator('.item-card')
+    .locator('.item-row')
     .filter({ has: page.getByRole('link', { name: '血清葡萄糖▲', exact: true }) })
   await expect(row).toBeVisible()
   const listMetrics = await row.evaluate((element) => ({

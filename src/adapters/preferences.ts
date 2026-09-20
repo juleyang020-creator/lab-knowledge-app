@@ -1,5 +1,4 @@
-import { AudienceSchema, IdentifierSchema } from '../domain/content'
-import type { Audience } from '../domain/content'
+import { IdentifierSchema } from '../domain/content'
 
 export const PREFERENCE_KEY = 'lab-knowledge.preferences.v1'
 export interface StoragePort {
@@ -8,14 +7,13 @@ export interface StoragePort {
 }
 export interface Preferences {
   savedIds: string[]
-  audience: Audience | null
 }
 
 export function readPreferences(
   storage: StoragePort | null,
   knownIds?: readonly string[],
 ): Preferences & { persistent: boolean } {
-  const empty = { savedIds: [], audience: null, persistent: !!storage }
+  const empty = { savedIds: [], persistent: !!storage }
   if (!storage) return empty
   let raw: string | null
   try {
@@ -38,8 +36,7 @@ export function readPreferences(
         ),
       ),
     ].slice(0, 500)
-    const audience = AudienceSchema.safeParse(value.audience)
-    return { savedIds, audience: audience.success ? audience.data : null, persistent: true }
+    return { savedIds, persistent: true }
   } catch {
     return empty
   }
@@ -53,7 +50,6 @@ export function writePreferences(storage: StoragePort | null, preferences: Prefe
       JSON.stringify({
         version: 1,
         savedIds: preferences.savedIds,
-        audience: preferences.audience,
       }),
     )
     return true

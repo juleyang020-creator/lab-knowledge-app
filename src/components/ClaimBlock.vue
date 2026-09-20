@@ -43,7 +43,6 @@ const title = computed(
         :aria-label="label"
         :to="{
           name: 'manual',
-          params: { audience: 'professional' },
           query: { section: evidence.manualLocation.sectionId, line: evidence.manualLocation.line },
         }"
         >原文 ↗</RouterLink

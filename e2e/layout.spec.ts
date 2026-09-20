@@ -3,57 +3,53 @@ import { test, expect } from '@playwright/test'
 for (const width of [320, 390]) {
   test(`模型概述徽章明确待核实且 ${width}px 窄屏不溢出`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 })
-    for (const audience of ['professional', 'patient']) {
-      await page.goto(`/#/${audience}`)
-      await page.locator('.directory-filters > summary').click()
-      await page.getByRole('combobox', { name: '概述来源' }).selectOption('model')
-      const badges = page.locator('.item-card .provenance-badge.model')
-      await expect(badges.first()).toBeVisible()
-      for (const badge of await badges.all()) {
-        await expect(badge).toHaveText('概述为模型补充 · 待核实')
-      }
-      const overflow = await badges.evaluateAll((elements) =>
-        elements
-          .filter((element) => {
-            const badge = element as HTMLElement
-            const rect = badge.getBoundingClientRect()
-            const bottom = badge.closest('.card-facts')!.getBoundingClientRect()
-            return (
-              badge.scrollWidth > badge.clientWidth + 1 ||
-              rect.left < bottom.left - 1 ||
-              rect.right > bottom.right + 1 ||
-              rect.left < 0 ||
-              rect.right > innerWidth
-            )
-          })
-          .map((element) => element.textContent),
-      )
-      expect(overflow).toEqual([])
+    await page.goto('/#/items?category=__teaching__')
+    const badges = page.locator('.item-row .provenance-badge.model')
+    await expect(badges.first()).toBeVisible()
+    for (const badge of await badges.all()) {
+      await expect(badge).toHaveText('概述为模型补充 · 待核实')
     }
+    const overflow = await badges.evaluateAll((elements) =>
+      elements
+        .filter((element) => {
+          const badge = element as HTMLElement
+          const rect = badge.getBoundingClientRect()
+          const row = badge.closest('.item-row')!.getBoundingClientRect()
+          return (
+            badge.scrollWidth > badge.clientWidth + 1 ||
+            rect.left < row.left - 1 ||
+            rect.right > row.right + 1 ||
+            rect.left < 0 ||
+            rect.right > innerWidth
+          )
+        })
+        .map((element) => element.textContent),
+    )
+    expect(overflow).toEqual([])
   })
 }
 
 const routes = [
   '/',
-  '/professional',
-  '/patient',
-  '/professional/items/glucose',
-  '/professional/items/xwh2026.table-4-1.026',
-  '/professional/items/xwh2026.table-4-8.001',
-  '/professional/specimens',
-  '/patient/specimens',
-  '/patient/items/xwh2026.table-4-7.017',
-  '/professional/manual?section=table-4-7',
-  '/patient/manual',
-  '/patient/items/creatinine',
-  '/professional/topics',
-  '/patient/guide',
+  '/items',
+  '/items?category=' + encodeURIComponent('凝血检验项目'),
+  '/items/glucose',
+  '/items/xwh2026.table-4-1.026',
+  '/items/xwh2026.table-4-8.001',
+  '/items/xwh2026.table-4-7.017',
+  '/items/creatinine',
+  '/manual',
+  '/manual?section=table-4-7',
+  '/search?q=' + encodeURIComponent('葡萄糖'),
   '/sources',
   '/library',
-  ...(process.env.CI_SOURCE_ONLY === 'true' ? [] : ['/library/book-98?page=162']),
-  '/patient/saved',
-  '/patient/items/missing',
+  '/saved',
+  '/items/missing',
   '/missing',
+  // 教材章节与原 PDF 需要本机生成的内容文件 / 原件，CI 源码包模式跳过
+  ...(process.env.CI_SOURCE_ONLY === 'true'
+    ? []
+    : ['/books', '/books/book-98', '/books/book-98/008', '/library/book-98?page=162']),
 ]
 
 for (const width of [1280, 900, 390, 320]) {
@@ -68,10 +64,6 @@ for (const width of [1280, 900, 390, 320]) {
         await expect(page.locator('main h1')).toBeVisible()
         await expect(page.locator('.loading-panel')).toHaveCount(0)
         await expect(page.locator('.error-panel')).toHaveCount(0)
-        if (route === '/professional/specimens')
-          await page.getByRole('searchbox', { name: '疾病、症状或项目关键词' }).fill('糖尿病')
-        if (route === '/patient/specimens')
-          await page.getByRole('searchbox', { name: '疾病、症状或项目关键词' }).fill('')
         const audit = await page.evaluate(() => {
           const main = document.querySelector('main')!
           const visible = (element: HTMLElement) => {
@@ -86,7 +78,7 @@ for (const width of [1280, 900, 390, 320]) {
             }
             return false
           }
-          const elements = [...document.querySelectorAll('main *, .top-shell *')].filter(
+          const elements = [...document.querySelectorAll('main *, .topbar *, .sidebar *')].filter(
             (element): element is HTMLElement => element instanceof HTMLElement && visible(element),
           )
           const describe = (element: HTMLElement) =>
@@ -104,6 +96,8 @@ for (const width of [1280, 900, 390, 320]) {
                 element.matches(':disabled')
               )
                 return false
+              // 教材目录树（156 章）密度优先，触控目标豁免；主操作仍全部达标
+              if (element.closest('.sidebar')) return false
               return element.getBoundingClientRect().height < 43.5
             })
             .map(describe)
@@ -166,9 +160,9 @@ for (const width of [1280, 900, 390, 320]) {
         expect(audit.overflow, route).toEqual([])
         expect(audit.smallTargets, route).toEqual([])
         expect(audit.lowContrast, route).toEqual([])
-        if (route === '/professional' && width === 390 && theme === 'light')
+        if (route === '/items' && width === 390 && theme === 'light')
           await page.screenshot({
-            path: testInfo.outputPath('professional-mobile.png'),
+            path: testInfo.outputPath('items-mobile.png'),
             fullPage: true,
           })
       }

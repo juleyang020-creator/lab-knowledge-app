@@ -26,17 +26,17 @@ test('全量517条项目详情逐字段浏览器核对，无遗漏、空值补�
   test.setTimeout(180_000)
   const errors: string[] = []
   page.on('pageerror', (error) => errors.push(error.message))
-  await page.goto('/#/professional')
+  await page.goto('/#/items')
   const visited: string[] = []
   let fields = 0
   for (const item of imported) {
     // Reset the document between batches: WebKit limits history writes to 100/10s.
     // Exhaustive automation must not turn a browser rate limit into a content failure.
     if (visited.length % 20 === 0)
-      await page.goto(`/?auditBatch=${visited.length}#/professional/items/${item.id}`)
+      await page.goto(`/?auditBatch=${visited.length}#/items/${item.id}`)
     else
       await page.evaluate((id) => {
-        location.hash = `/professional/items/${id}`
+        location.hash = `/items/${id}`
       }, item.id)
     await expect(page.locator('main h1')).toHaveText(item.name)
     const clinical = item.manual!.fields.find((field) => field.label === '临床意义')
@@ -105,7 +105,7 @@ test('全量233节原文和21张表可阅读，逐节核对段落、表头和所
   test.setTimeout(180_000)
   const errors: string[] = []
   page.on('pageerror', (error) => errors.push(error.message))
-  await page.goto('/#/professional/manual')
+  await page.goto('/#/manual')
   const chapters = page.getByRole('combobox', { name: '手册章节' })
   await expect(chapters.locator('option')).toHaveCount(233)
   let paragraphs = 0,
@@ -114,7 +114,7 @@ test('全量233节原文和21张表可阅读，逐节核对段落、表头和所
   const visited: string[] = []
   for (const section of sections) {
     if (visited.length % 20 === 0)
-      await page.goto(`/?auditBatch=${visited.length}#/professional/manual?section=${section.id}`)
+      await page.goto(`/?auditBatch=${visited.length}#/manual?section=${section.id}`)
     else await chapters.selectOption(section.id)
     await expect(page.locator('.manual-reading h2')).toHaveText(section.title)
     const blocks = manualBlocks(section)

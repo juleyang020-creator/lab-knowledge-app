@@ -171,5 +171,4 @@ export type AudiencePayload = z.infer<typeof AudiencePayloadSchema>
 export interface ContentBundle {
   catalog: Catalog
   professional: AudiencePayload
-  patient: AudiencePayload
 }

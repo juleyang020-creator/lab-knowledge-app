@@ -80,16 +80,5 @@ export function contentBundle(): ContentBundle {
       topics: [],
       guides: [],
     },
-    patient: {
-      audience: 'patient',
-      articles: [
-        {
-          itemId: 'sample',
-          sections: [{ id: 'context', title: '通俗说明', claims: [modelClaim('sample.patient')] }],
-        },
-      ],
-      topics: [],
-      guides: [],
-    },
   }
 }

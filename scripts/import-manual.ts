@@ -70,7 +70,6 @@ const catalog: Catalog = {
 validateBundle({
   catalog,
   professional: await readJSON('professional'),
-  patient: await readJSON('patient'),
 })
 if (check) {
   if (JSON.stringify(original) !== JSON.stringify(catalog))

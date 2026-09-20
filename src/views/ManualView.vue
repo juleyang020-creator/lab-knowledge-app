@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
-import { AudienceSchema } from '../domain/content'
 import { MANUAL_ASSET, MANUAL_SOURCE_ID, manualBlocks, manualText } from '../domain/manual'
 import type { ManualSection } from '../domain/manual'
 import { loadManual } from '../adapters/manualRepository'
@@ -12,7 +11,6 @@ import { useWorkspace } from '../state/workspace'
 const route = useRoute()
 const router = useRouter()
 const { state } = useWorkspace()
-const audience = computed(() => AudienceSchema.parse(route.params.audience))
 const source = computed(() => state.catalog?.sources.find((entry) => entry.id === MANUAL_SOURCE_ID))
 const sections = ref<ManualSection[]>([])
 const error = ref('')
@@ -89,7 +87,7 @@ watch(
       (line ? document.getElementById(`manual-line-${line}`) : null) ??
       document.getElementById('manual-section-title')
     if (!target) return
-    target.style.scrollMarginTop = `${(document.querySelector('.top-shell')?.getBoundingClientRect().height ?? 0) + 16}px`
+    target.style.scrollMarginTop = `${(document.querySelector('.topbar')?.getBoundingClientRect().height ?? 0) + 16}px`
     target.focus({ preventScroll: true })
     target.scrollIntoView({ block: 'start' })
   },
@@ -108,7 +106,6 @@ onBeforeUnmount(() => controller?.abort())
     </div>
   </header>
   <p class="manual-notice">
-    <strong v-if="audience === 'patient'">专业手册原文，不是患者自行操作指南。</strong>
     原文中的疑似错字、参考区间及医学表述未校订，不能作为个体诊断或自行停药、采样的依据；业务要求仅代表原手册所述机构。
   </p>
   <a class="back-link" :href="downloadUrl" download>下载完整原文（Markdown）</a>
@@ -170,7 +167,7 @@ onBeforeUnmount(() => controller?.abort())
       </p>
       <template v-for="block in blocks" :key="block.line">
         <p v-if="block.kind === 'paragraph'" :id="`manual-line-${block.line}`" tabindex="-1">
-          <ManualInline :text="block.text" :audience="audience" />
+          <ManualInline :text="block.text" />
         </p>
         <div
           v-else
@@ -189,7 +186,7 @@ onBeforeUnmount(() => controller?.abort())
             <thead>
               <tr>
                 <th v-for="(header, column) in block.headers" :key="column" scope="col">
-                  <ManualInline :text="header" :audience="audience" />
+                  <ManualInline :text="header" />
                 </th>
               </tr>
             </thead>
@@ -204,10 +201,10 @@ onBeforeUnmount(() => controller?.abort())
                 <td v-for="(cell, column) in row.cells" :key="column">
                   <RouterLink
                     v-if="column === 0 && itemByLine.has(row.line)"
-                    :to="{ name: 'item', params: { audience, itemId: itemByLine.get(row.line) } }"
-                    ><ManualInline :text="cell" :audience="audience"
+                    :to="{ name: 'item', params: { itemId: itemByLine.get(row.line) } }"
+                    ><ManualInline :text="cell"
                   /></RouterLink>
-                  <ManualInline v-else-if="manualText(cell)" :text="cell" :audience="audience" />
+                  <ManualInline v-else-if="manualText(cell)" :text="cell" />
                   <span v-else class="manual-empty">原文空白</span>
                 </td>
               </tr>

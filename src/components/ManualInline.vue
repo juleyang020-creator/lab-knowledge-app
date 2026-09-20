@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
-import type { Audience } from '../domain/content'
 import { inlineTokens } from '../domain/manual'
-const props = defineProps<{ text: string; audience: Audience }>()
+const props = defineProps<{ text: string }>()
 const tokens = computed(() => inlineTokens(props.text))
 </script>
 <template>
@@ -11,7 +10,7 @@ const tokens = computed(() => inlineTokens(props.text))
     <br v-if="token.kind === 'br'" />
     <RouterLink
       v-else-if="token.kind === 'link'"
-      :to="{ name: 'manual', params: { audience }, query: { section: token.target } }"
+      :to="{ name: 'manual', query: { section: token.target } }"
       >{{ token.text }}</RouterLink
     >
     <component
